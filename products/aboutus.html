@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="shortcut icon" href="assets/Favaboutus2.png" type="image/x-png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cookie&family=Diphylleia&family=Inter&family=Kanit&family=Lemon&family=Poppins&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .topbox {
+            /* border: 2px solid; */
+            height: auto;
+            /* background-color: rgb(255, 255, 255); */
+        }
+
+        .combo {
+            box-sizing: border-box;
+            /* border: 2px solid; */
+            display: flow-root;
+            padding: 15px;
+        }
+
+        .combo>img {
+            float: left;
+            border-radius: 20px;
+            margin: 20px;
+            width: 40%;
+        }
+
+        .combo2 {
+            box-sizing: border-box;
+            /* border: 2px solid; */
+            display: flow-root;
+            padding: 15px;
+        }
+
+        .combo2>img {
+            float: right;
+            border-radius: 20px;
+            margin: 20px;
+            width: 40%;
+        }
+
+        .aboutus1 {
+            font-family: 'Roboto Condensed', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 3rem;
+            color: rgb(212, 11, 11);
+
+        }
+
+        .intro {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: "Inter", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            font-size: 25px;
+            color: rgb(158, 137, 20);
+        }
+
+        .descripition {
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+
+        }
+
+
+        .collection {
+            padding: 20px;
+            /* border: 2px solid; */
+            height: auto;
+
+        }
+
+        .frame {
+            box-sizing: border-box;
+            /* border: 2px solid; */
+            height: 60vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .frame>div {
+            box-sizing: border-box;
+            /* border: 2px solid red;  */
+            margin: 5px;
+            width: 30%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+
+        .frame>div>img {
+            /* border: 2px solid; */
+            height: 100%;
+        }
+
+        .collection>h1 {
+            /* border: 2px solid; */
+            font-family: 'Roboto Condensed', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: xx-large;
+            color: purple;
+        }
+
+        .dealers {
+            background-color: #fff9fa;
+            padding: 20px;
+
+        }
+
+        .dealers h2 {
+            font-family: 'Roboto Condensed', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: xx-large;
+            color: rgb(212, 11, 11);
+            text-align: center;
+
+        }
+
+        .textarea {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .intro2 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: "Inter", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: xx-large;
+            font-weight: 600;
+            color: rgb(0, 0, 0);
+        }
+
+        .descripition2 {
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+            text-align: center;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .dealerlogos {
+            /* border: 2px solid; */
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dealer1,
+        .dealer2,
+        .dealer3,
+        .dealer4,
+        .dealer5,
+        .dealer6 {
+            /* border: 2px solid; */
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+
+        .dealer1>img,
+        .dealer2>img,
+        .dealer3>img,
+        .dealer4>img,
+        .dealer5>img,
+        .dealer6>img {
+            /* border: 2px solid; */
+            height: 100%;
+        }
+
+        .row1 {
+            align-items: right;
+            /* border: 2px solid; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .row2 {
+            /* border: 1px solid; */
+            /* height: 180px; */
+            width: 90%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .row3 {
+            /* border: 1px solid; */
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .enhance {
+            text-decoration: none;
+            color: rgb(167, 6, 6);
+        }
+
+        .enhance:hover {
+            transition: all 1s ease-in;
+            transform: translateX(50px);
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- /* Top Navbar Code Starts */ -->
+
+    <section class="navbar">
+        <div class="left">
+            <a href="index.html"><img src="assets/sa.png" alt=""></a>
+        </div>
+        <div class="right">
+            <nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ourservice.html">Our Products</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </nav>
+        </div>
+        <div class="userlogin"><a class="user" href="login.html"><img src="assets/user.png" alt=""> &ThickSpace; Login /
+                Signup</a></div>
+    </section>
+
+    <!-- /* Top Navbar Code Ends */ -->
+
+    <!-- About Us Code  -->
+
+    <section class="topbox">
+        <div class="combo">
+            <img src="assets/we.jpg" alt="men">
+            <div class="aboutus1">About us</div>
+            <div class="intro"> Get to know more about us </div>
+            <div class="descripition"> Welcome to <a class="enhance" href="#"><b>Sumit Shopping</b></a>, where style
+                meets sophistication! At Sumit
+                Shopping, we take pride in offering a curated collection of <b>high-quality, top-brand </b>clothing
+                that
+                caters to the fashion-forward individuals who seek excellence in every stitch. Our online store is
+                more than just a shopping destination; it's a celebration of style, comfort, and individuality.
+            </div>
+
+            <div class="descripition">
+                <div class="intro">Our Commitment to Quality:</div>
+                At the heart of Sumit Shopping lies a commitment to delivering only the finest garments to our
+                discerning customers. We believe that fashion should not only be an expression of personal taste but
+                also a testament to enduring quality. That's why each piece in our collection is meticulously chosen
+                from top-tier brands known for their dedication to craftsmanship and attention to detail.
+            </div>
+            <div class="descripition">
+                <div class="intro"> Top Brands, Timeless Style:</div>
+                Discover an exquisite blend of timeless classics and contemporary trends from the most covetedbrands
+                in the fashion industry. We've carefully curated a diverse range of clothing, ensuring thatevery
+                item reflects the latest styles while maintaining the timeless appeal that transcends
+                fleetingfashion fads. From casual wear to formal attire, Sumit Shopping has you covered with an
+                array ofoptions that suit every occasion.
+            </div>
+        </div>
+
+        <div class="combo2">
+            <img class="we2" src="assets/we2.jpg" alt="">
+            <div class="descripition">
+                <div class="intro"> Unparalleled Shopping Experience: </div>
+                Shopping at Sumit Shopping is not just a transaction; it's an experience. Our user-friendly website
+                provides a seamless and enjoyable shopping journey, allowing you to explore our collections
+                effortlessly. With detailed product descriptions, size guides, and stunning visuals, we strive to
+                make
+                your online shopping experience as enjoyable as browsing through a high-end boutique.
+            </div>
+            <div class="descripition">
+                <div class="intro">Customer Satisfaction Guaranteed:</div>
+                Your satisfaction is our top priority. We stand behind the quality of every item in our collection,
+                and
+                our
+                dedicated customer support team is always ready to assist you with any inquiries or concerns. From
+                the
+                moment you land on our website to the joyous unboxing of your carefully packaged order, we aim to
+                exceed
+                your expectations at every step.
+            </div>
+            <div class="descripition">
+                Join us on a journey where style and quality converge. Elevate your wardrobe with Sumit Shopping and
+                experience the epitome of high-end fashion at your fingertips. Thank you for choosing us as your
+                go-todestination for premium clothing and unparalleled style.
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <!-- Our Dealers -->
+    <section class="dealers">
+        <div class="textarea">
+            <h2>Our Trusted Dealers</h2>
+            <div class="intro2">Have a look at our dealers</div>
+            <div class="descripition2">
+                Welcome to a place where fashion meets luxury! We are special cloth dealers, offering stylish clothes
+                from big names like Louis Vuitton and Gucci. Our collection is all about high-quality, well-made pieces
+                that show off the amazing craftsmanship of these famous brands. When you shop with us, you're not just
+                buying clothes; you're getting a taste of the fancy and fashionable lifestyle these brands represent.
+                Upgrade your wardrobe with timeless and classy pieces that'll make you stand out. We're not just selling
+                clothes; we're bringing a touch of luxury to your everyday style!</div>
+        </div>
+
+        <!-- DEALERS LOGOS -->
+        <div class="dealerlogos">
+            <div class="row row1">
+                <div class="dealer dealer1"><img src="assets/dealer1.png" alt="" width="200px"></div>
+            </div>
+            <div class="row row2">
+                <div class="dealer dealer2"><img src="assets/dealer2.png" alt="" width="200px"></div>
+                <div class="dealer dealer3">
+                    <img src="assets/dealer3.png" alt="" width="200px">
+                </div>
+            </div>
+            <div class="row row3">
+                <div class="dealer dealer4"><img src="assets/dealer4.png" alt="" width="200px"></div>
+                <div class="dealer dealer5"><img src="assets/dealer5.png" alt="" width="200px"></div>
+                <div class="dealer dealer6"><img src="assets/dealer6.png" alt="" width="200px"></div>
+            </div>
+        </div>
+
+    </section>
+    <hr>
+    <!-- Four Image Frame     -->
+
+    <section class="collection">
+        <h1>Our Most Selling Products</h1>
+        <div class="frame">
+            <div><img class="frame1" src="assets/coll1.png" alt=""></div>
+            <div><img class="frame2" src="assets/coll2.png" alt=""></div>
+            <div><img class="frame3" src="assets/coll3.png" alt=""></div>
+        </div>
+        <div class="frame">
+            <div><img class="frame4" src="assets/coll4.png" alt=""></div>
+            <div><img class="frame5" src="assets/coll5.png" alt=""></div>
+            <div><img class="frame6" src="assets/coll6.png" alt=""></div>
+        </div>
+    </section>
+
+
+    <!-- /* Footer Code  Start */ -->
+
+    <section class="downnavbar">
+        <div class="lowleft">
+            <div class="firstone"><a href=""><img src="assets/sa.png" alt=""></a></div>
+            <div class="slogan">Your One-Stop Destination for Quality Finds!</div>
+            <div class="information">
+                <div class="same"><a href=""><img src="assets/noun-call-4812562 3.svg" alt=""> <span class="gaping">
+                            9815603389, 9848629739</span></a></div>
+                <div class="same"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=customercare@sumit.hotmail.com"><img src="assets/noun-mail-4809293 3.svg" alt=""> <span class="gaping">
+                    customercare@sumit.hotmail.com</span></a></div>
+                <div class="same"><a href="https://maps.app.goo.gl/m2DzEMSAfL5MLVKk7"><img src="assets/noun-location-4811216 3.svg" alt=""> <span class="gaping">
+                            PatanDhoka Lalitpur</span></a></div>
+            </div>
+        </div>
+        <div class="lowright">
+            <div class="uplow">
+                <a href=""><img src="assets/whatsapp.svg" alt=""></a>
+                <a href=""><img src="assets/facebook.svg" alt=""></a>
+                <a href=""><img src="assets/insta.svg" alt=""></a>
+            </div>
+            <div class="downlow">
+                <div class="lowest">
+                    <div class="box box1">
+                        <h2 class="quickhead">Quicklinks</h2>
+                        <div><a class="quicklinks" href="index.html">Home</a></div>
+                        <div><a class="quicklinks" href="aboutus.html">About Us</a></div>
+                        <div><a class="quicklinks" href="ourservice.html">Our Products</a></div>
+                        <div><a class="quicklinks" href="contactus.html">Reach Us</a></div>
+                    </div>
+                    <div class="box box21">
+                        <h2 class="quickhead">Services</h2>
+                        <div><a class="quicklinks" href="ourservice.html #MEN">Men's Wares</a></div>
+                        <div><a class="quicklinks" href="ourservice.html #WOMEN">Women's Wares</a></div>
+                        <div><a class="quicklinks" href="ourservice.html #KID">Kid's Wares</a></div>                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="ourteam">
+            <div class="teamheader">
+                <h2>Our Team</h2>
+            </div>
+            <div class="codercard">
+                <div class="coder">
+                    <div class="beforecodercard"></div>
+                        <div class="incoder sumit">
+                            <div class="PP">
+                                <img src="assets/sumit.png" alt="">
+                            </div>
+                            <div class="codername">Sumit Chaudhary (Leader)</div>
+                            <div class="coderpp">
+                                <a href="#"><img src="assets/cfollow.png" alt=""></a>
+                                <a href="https://www.instagram.com/_summit_chaudhary/"><img src="assets/cfollow1.png" alt=""></a>
+                                <a href="#"><img src="assets/cfollow2.png" alt=""></a>
+                            </div>
+                        </div>
+                    <div class="aftercodercard"></div>
+                </div>
+
+                <div class="coder">
+                    <div class="beforecodercard"></div>
+                    <div class="aftercodercard"></div>
+                    <div class="incoder ananata">
+                        <div class="PP">
+                            <img src="assets/ananata.png" alt="">
+                        </div>
+                        <div class="codername">Ananta Kadel <br>(Adivsor)</div>
+                        <div class="coderpp">
+                            <a href="#"><img src="assets/cfollow.png" alt=""></a>
+                            <a href="https://www.instagram.com/kandelananta/"><img src="assets/cfollow1.png" alt=""></a>
+                            <a href="#"><img src="assets/cfollow2.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coder">
+                    <div class="beforecodercard"></div>
+                    <div class="incoder anup">
+                        <div class="PP">
+                            <img src="assets/anup.png" alt="">
+                        </div>
+                        <div class="codername">Anup Chand <br> (Coder)</div>
+                        <div class="coderpp">
+                            <a href="#"><img src="assets/cfollow.png" alt=""></a>
+                            <a href="https://www.instagram.com/anoopchand69/"><img src="assets/cfollow1.png" alt=""></a>
+                            <a href="#"><img src="assets/cfollow2.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="aftercodercard"></div>
+                </div>
+            </div>
+        </div> -->
+
+
+
+    </section>
+    <footer>
+        <div>
+            &copy; Sumit Shopping 2024. All Rights are Reserved and Protected. Created by Newbiee Coder'ss&TRADE;
+        </div>
+    </footer>
+
+    <!-- /* Footer Code  Ends */ -->
+
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'); /* Added FontAwesome */
+
+        body {
+            background-color: #FFF8F9;
+        }
+        
+        .container {
+            font-family: Raleway, sans-serif;
+            /* border: 2px solid; */
+            padding: 10px;
+            /* box-sizing: border-box; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            margin: 20px;
+        }
+        .container > h2 {
+            text-align: center;
+            padding-bottom: 20px;
+            font-size: 2rem;
+        }
+        
+        .screen {
+            /* border: 2px solid; */
+            border-radius: 20px;
+            background: linear-gradient(90deg, #5D54A4, #7C78B8);
+            position: relative;
+            height: 600px;
+            width: 500px; /* Increased width */
+            box-shadow: 0px 0px 24px #5C5696;
+        }
+
+        .screen__content {
+            z-index: 1;
+            position: relative;
+            height: 100%;
+        }
+
+        .screen__background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+        }
+
+        .screen__background__shape {
+            transform: rotate(45deg);
+            position: absolute;
+        }
+
+        .screen__background__shape1 {
+            height: 520px;
+            width: 520px;
+            background: #FFF;
+            top: -50px;
+            right: 120px;
+            border-radius: 0 72px 0 0;
+        }
+
+        .screen__background__shape2 {
+            height: 220px;
+            width: 220px;
+            background: #6C63AC;
+            top: -172px;
+            right: 0;
+            border-radius: 32px;
+        }
+
+        .screen__background__shape3 {
+            height: 540px;
+            width: 190px;
+            background: linear-gradient(270deg, #5D54A4, #6A679E);
+            top: -24px;
+            right: 0;
+            border-radius: 32px;
+        }
+
+        .screen__background__shape4 {
+            height: 400px;
+            width: 200px;
+            background: #7E7BB9;
+            top: 420px;
+            right: 50px;
+            border-radius: 60px;
+        }
+
+        .login {
+            width: 90%;
+            padding: 30px;
+            padding-top: 5%;
+        }
+
+        .login__field {
+            padding: 20px 0px;
+            position: relative;
+        }
+
+        .login__icon {
+            position: absolute;
+            top: 30px;
+            color: #7875B5;
+        }
+
+        .login__input {
+            border: none;
+            border-bottom: 2px solid #D1D1D4;
+            background: none;
+            padding: 10px;
+            padding-left: 24px;
+            font-weight: 700;
+            width: 85%; /* Increased input width */
+            transition: .2s;
+        }
+
+        .login__input:active,
+        .login__input:focus,
+        .login__input:hover {
+            outline: none;
+            border-bottom-color: #6A679E;
+        }
+
+        .login__submit {
+            background: #fff;
+            font-size: 14px;
+            margin-top: 30px;
+            padding: 16px 20px;
+            border-radius: 26px;
+            border: 1px solid #D4D3E8;
+            text-transform: uppercase;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            color: #4C489D;
+            box-shadow: 0px 2px 2px #5C5696;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .login__submit:active,
+        .login__submit:focus,
+        .login__submit:hover {
+            border-color: #6A679E;
+            outline: none;
+        }
+
+        .button__icon {
+            font-size: 24px;
+            margin-left: auto;
+            color: #7875B5;
+        }
+
+        .login__input {
+            color: #4C489D;
+            font-size: 18px;
+        }
+        #errmsg{
+            margin-top: 15px;
+            color: rgb(0, 0, 0);
+            /* color: rgb(29, 209, 13); */
+            font-size: 20px;
+            font-weight: 900;
+        }
+        #showPassword{
+            font-weight: 600;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- /* Top Navbar Code Starts */ -->
+
+    <section class="navbar">
+        <div class="left">
+            <a href="index.html"><img src="assets/sa.png" alt=""></a>
+        </div>
+        <div class="right">
+            <nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ourservice.html">Our Products</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </nav>
+        </div>
+        <div class="userlogin"><a class="user" href="login.html"><img src="assets/user.png" alt=""> &ThickSpace; Login /
+                Signup</a></div>
+    </section>
+
+    <!-- /* Top Navbar Code Ends */ -->
+    <div class="container">
+        <h2>Registration</h2>
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login" onsubmit="return validate()" action="../ourservice_afterLogin.html">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" placeholder="First Name" id="fname">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" placeholder="Last Name" id="lname">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-envelope"></i>
+                        <input type="email" class="login__input" placeholder="Email" id="email">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-phone"></i>
+                        <input type="text" class="login__input" placeholder="Number" id="number">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" class="login__input" placeholder="Password" id="pass">
+                    </div>
+                    <input type="checkbox" id="showPassword" onclick="togglePasswordVisibility()"> Show Password
+                    <div id="errmsg"></div>
+                    <button class="button login__submit" type="submit">
+                        <span class="button__text">Register Now</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>
+        </div>
+    </div>
+
+    
+<!-- /* Footer Code  Start */ -->
+
+<section class="downnavbar">
+    <div class="lowleft">
+        <div class="firstone"><a href=""><img src="assets/sa.png" alt=""></a></div>
+        <div class="slogan">Your One-Stop Destination for Quality Finds!</div>
+        <div class="information">
+            <div class="same"><a href=""><img src="assets/noun-call-4812562 3.svg" alt=""> <span class="gaping">
+                        9815603389, 9848629739</span></a></div>
+            <div class="same"><a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=customercare@sumit.hotmail.com"><img
+                        src="assets/noun-mail-4809293 3.svg" alt=""> <span class="gaping">
+                        customercare@sumit.hotmail.com</span></a></div>
+            <div class="same"><a href="https://maps.app.goo.gl/m2DzEMSAfL5MLVKk7"><img
+                        src="assets/noun-location-4811216 3.svg" alt=""> <span class="gaping">
+                        PatanDhoka Lalitpur</span></a></div>
+        </div>
+    </div>
+    <div class="lowright">
+        <div class="uplow">
+            <a href=""><img src="assets/whatsapp.svg" alt=""></a>
+            <a href=""><img src="assets/facebook.svg" alt=""></a>
+            <a href=""><img src="assets/insta.svg" alt=""></a>
+        </div>
+        <div class="downlow">
+            <div class="lowest">
+                <div class="box box1">
+                    <h2 class="quickhead">Quicklinks</h2>
+                    <div><a class="quicklinks" href="index.html">Home</a></div>
+                    <div><a class="quicklinks" href="aboutus.html">About Us</a></div>
+                    <div><a class="quicklinks" href="ourservice.html">Our Products</a></div>
+                    <div><a class="quicklinks" href="contactus.html">Reach Us</a></div>
+                </div>
+                <div class="box box21">
+                    <h2 class="quickhead">Services</h2>
+                    <div><a class="quicklinks" href="ourservice.html #MEN">Men's Wares</a></div>
+                    <div><a class="quicklinks" href="ourservice.html #WOMEN">Women's Wares</a></div>
+                    <div><a class="quicklinks" href="ourservice.html #KID">Kid's Wares</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<footer>
+    <div>
+        &copy; Sumit Shopping 2024. All Rights are Reserved and Protected. Created by Newbiee Coder'ss&TRADE;
+    </div>
+</footer>
+
+<!-- /* Footer Code  Ends */ -->
+    <script>
+        function validate() {
+            let fname = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("number").value;
+            let password = document.getElementById("pass").value;
+            let msg = document.getElementById("errmsg");
+            let emailPattern = /^[\w.-]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
+            let validmail = emailPattern.test(email);
+
+            if (fname === "" || lname === "" || email === "" || phone === "" || password === "") {
+                msg.innerHTML = "Please fill all the required fields";
+                return false;
+            }
+            if (fname.length < 2) {
+                msg.innerHTML = "First Name should contain at least 2 letters";
+                return false;
+            }
+            if (lname.length < 2) {
+                msg.innerHTML = "Last Name should contain at least 2 letters";
+                return false;
+            }
+            if (!validmail) {
+                msg.innerHTML = "Entered email is invalid";
+                return false;
+            }
+            if (phone.length < 10 || isNaN(phone)) {
+                msg.innerHTML = "Entered phone number is invalid";
+                return false;
+            }
+            if (password.length < 8) {
+                msg.innerHTML = "Password should contain at least 8 characters";
+                return false;
+            }
+            alert("Registration Successfull")
+            return true;
+        }
+
+        function togglePasswordVisibility() {
+            let passwordField = document.getElementById("pass");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+    </script>
+</body>
+
+</html>

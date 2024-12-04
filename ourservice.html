@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Service</title>
+    <link rel="shortcut icon" href="assets/Favservice2.png" type="image/x-png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cookie&family=Diphylleia&family=Inter&family=Kanit&family=Lemon&family=Poppins&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .ourservices {
+            width: 100%;
+            /* background-color: hsl(350, 67%, 96%); */
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 15px;
+        }
+
+        .heading {
+            margin-top: 20px;
+            text-align: center;
+            /* border: 2px solid; */
+            color: rgb(185, 1, 1);
+            font-family: 'Roboto Condensed', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .mid {
+            text-align: center;
+            font-family: 'Roboto Condensed', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 900;
+            /* font-style: italic; */
+        }
+
+        .paragra {
+            color: rgb(56, 56, 56);
+            width: 90%;
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: left;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .p2 {
+            text-align: left;
+        }
+
+        .row {
+            /* border: 2px solid black; */
+            width: 95%;
+            height: 55vh;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px;
+            justify-content: space-around;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .frame {
+            /* border: 2px solid yellowgreen; */
+            border-radius: 20px;
+            height: 100%;
+            width: 20.66%;
+            position: relative;
+            display: flex;
+            transition: all 0.3s ease-in-out;
+            object-fit: contain;
+            /* overflow: hidden; */
+        }
+
+        .frame:hover {
+            transform: scale(1.1);
+        }
+
+        .redlogo {
+            position: absolute;
+            width: 80px;
+            top: -5%;
+            left: -8%;
+        }
+
+        .framee {
+            /* position: relative; */
+            border: 2px solid rgb(66, 50, 205);
+            border-radius: 20px;
+            height: 100%;
+            width: 100%;
+            font-size: larger;
+            /* display: hidden; */
+            opacity: 0;
+        }
+
+        hr {
+            width: 90%;
+            border: 2px solid rgb(190, 190, 190);
+
+        }
+
+        h1 {
+            background: -webkit-linear-gradient(#a51f1a, #461a8d);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            font-family: 'Diphylleia', 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: xx-large;
+            /* border: 2px solid; */
+            width: 20%;
+        }
+
+        /* Women Section  */
+
+        .frame1 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/women1.webp);
+            background-size: cover;
+        }
+
+        .frame1:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/women1c.webp);
+            background-size: cover;
+        }
+
+        .frame2 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/women2.webp);
+            background-size: cover;
+        }
+
+        .frame2:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/women2b.webp);
+            background-size: cover;
+        }
+
+        .frame3 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/women3.webp);
+            background-size: cover;
+        }
+
+        .frame3:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/women3b.webp);
+            background-size: cover;
+        }
+
+        .frame4 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/women4.webp);
+            background-size: cover;
+        }
+
+        .frame4:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/women4b.webp);
+            background-size: cover;
+        }
+
+        .frame5 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/women5.webp);
+            background-size: cover;
+        }
+
+        .frame5:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/women5b.webp);
+            background-size: cover;
+        }
+
+        .frame6 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/women6.webp);
+            background-size: cover;
+        }
+
+        .frame6:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/women6b.webp);
+            background-size: cover;
+        }
+
+        .frame7 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures//women7.webp);
+            background-size: cover;
+        }
+
+        .frame7:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/women7b.webp);
+            background-size: cover;
+        }
+
+        .frame8 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/women8.webp);
+            background-size: cover;
+        }
+
+        .frame8:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/women8b.webp);
+            background-size: cover;
+        }
+
+        /* Men's Section */
+
+        .frame9 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/men1.webp);
+            background-size: cover;
+        }
+
+        .frame9:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/men1b.webp);
+            background-size: cover;
+        }
+
+        .frame10 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/men2.webp);
+            background-size: cover;
+        }
+
+        .frame10:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/men2b.webp);
+            background-size: cover;
+        }
+
+        .frame11 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/men3.webp);
+            background-size: cover;
+        }
+
+        .frame11:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/men3b.webp);
+            background-size: cover;
+        }
+
+        .frame12 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/men4.webp);
+            background-size: cover;
+        }
+
+        .frame12:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/men4b.webp);
+            background-size: cover;
+        }
+
+        .frame13 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/men5.webp);
+            background-size: cover;
+        }
+
+        .frame13:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/men5b.webp);
+            background-size: cover;
+        }
+
+        .frame14 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/men6.webp);
+            background-size: cover;
+        }
+
+        .frame14:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/men6b.webp);
+            background-size: cover;
+        }
+
+        .frame15 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/men7.webp);
+            background-size: cover;
+        }
+
+        .frame15:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/men7b.webp);
+            background-size: cover;
+        }
+
+        .frame16 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/men8.webp);
+            background-size: cover;
+        }
+
+        .frame16:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/men8b.webp);
+            background-size: cover;
+        }
+
+
+        /* Kid's Section  */
+
+        .frame17 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/kid1.webp);
+            background-size: cover;
+        }
+
+        .frame17:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/kid1b.webp);
+            background-size: cover;
+        }
+
+        .frame18 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/kid2.webp);
+            background-size: cover;
+        }
+
+        .frame18:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/kid2b.webp);
+            background-size: cover;
+        }
+
+        .frame19 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/kid3.webp);
+            background-size: cover;
+        }
+
+        .frame19:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/kid3b.webp);
+            background-size: cover;
+        }
+
+        .frame20 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/kid4.webp);
+            background-size: cover;
+        }
+
+        .frame20:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/kid4b.webp);
+            background-size: cover;
+        }
+
+        .frame21 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/kid5.webp);
+            background-size: cover;
+        }
+
+        .frame21:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/kid5b.webp);
+            background-size: cover;
+        }
+
+        .frame22 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/kid6.webp);
+            background-size: cover;
+        }
+
+        .frame22:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/kid6b.webp);
+            background-size: cover;
+        }
+
+        .frame23 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/kid7.webp);
+            background-size: cover;
+        }
+
+        .frame23:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/kid7b.webp);
+            background-size: cover;
+        }
+
+        .frame24 {
+            /* border: 2px solid; */
+            background-image: url(assets/pictures/kid8.webp);
+            background-size: cover;
+        }
+
+        .frame24:hover {
+
+            border: 2px solid rgb(172, 69, 69);
+            background-image: url(assets/pictures/kid8b.webp);
+            background-size: cover;
+        }
+
+
+        .thankyou {
+
+            /* border: 2px solid; */
+            padding: 20px;
+            width: 90%;
+            font-size: x-large;
+            font-family: 'Poppins', serif;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- /* Top Navbar Code Starts */ -->
+
+    <section class="navbar">
+        <div class="left">
+            <a href="index.html"><img src="assets/sa.png" alt=""></a>
+        </div>
+        <div class="right">
+            <nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ourservice.html">Our Products</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </nav>
+        </div>
+        <div class="userlogin"><a class="user" href="login.html"><img src="assets/user.png" alt=""> &ThickSpace; Login /
+                Signup</a></div>
+    </section>
+
+    <!-- /* Top Navbar Code Ends */ -->
+
+
+    <section class="ourservices">
+        <div class="heading">Our Services</div>
+        <div class="mid">Here is What we have for you</div>
+        <div class="paragra">
+            <p class="p1">Welcome to <strong>Sumit Shopping</strong>, your ultimate destination for quality finds! We
+                take pride in offering a diverse range of products for men, women, and children, curated to meet your
+                style and preferences.</p> <br>
+            <p class="p2">Our journey began with a passion for delivering the best shopping experience. At <strong>Sumit
+                    Shopping</strong>, we strive to provide top-notch customer service, unbeatable prices, and a wide
+                selection of products from the best brands. Whether you're looking for the latest fashion trends,
+                children's essentials, or exclusive deals on top sales items, <strong>Sumit Shopping</strong> has you
+                covered. We are committed to bringing you traditional clothes in super high quality and showcasing the
+                best brands in the industry.</p><br>
+        </div>
+        <hr>
+        <h1>Women's Section</h1>
+        <div class="row row1" id="WOMEN">
+            <div class="frame frame1">
+                <a href="/products/product1.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame2">
+                <a href="/products/product2.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame3">
+                <a href="/products/product3.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame4">
+                <a href="/products/product4.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+        </div>
+        <div class="row row2">
+            <div class="frame frame5">
+                <a href="/products/product5.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame6">
+                <a href="/products/product6.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame7">
+                <a href="/products/product7.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame8">
+                <a href="/products/product8.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+        </div>
+        <hr>
+        <h1>Men's Section</h1>
+
+        <div class="row row3" id="MEN">
+            <div class="frame frame9">
+                <a href="/products/product9.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame10">
+                <a href="/products/product10.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame11">
+                <a href="/products/product11.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame12">
+                <a href="/products/product12.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+        </div>
+        <div class="row row4">
+            <div class="frame frame13">
+                <a href="/products/product13.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame14">
+                <a href="/products/product14.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame15">
+                <a href="/products/product15.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame16">
+                <a href="/products/product16.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+        </div>
+        <hr>
+        <h1>Kid's Section</h1>
+
+        <div class="row row5" id="KID">
+            <div class="frame frame17">
+                <a href="/products/product17.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame18">
+                <a href="/products/product18.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame19">
+                <a href="/products/product19.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame20">
+                <a href="/products/product20.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+        </div>
+        <div class="row row6">
+            <div class="frame frame21">
+                <a href="/products/product21.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame22">
+                <a href="/products/product22.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame23">
+                <a href="/products/product23.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+            <div class="frame frame24">
+                <a href="/products/product24.html">
+                    <div class="framee">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </a>
+                <img class="redlogo" src="assets/buynow2.png" alt="">
+            </div>
+        </div>
+        <hr>
+
+        <div class="thankyou">
+            Thank you for choosing <b>Sumit Shopping</b> as your go-to shopping destination. We look forward to serving
+            you and making your online shopping experience delightful!
+        </div>
+
+    </section>
+
+    <!-- /* Footer Code  Start */ -->
+
+    <section class="downnavbar">
+        <div class="lowleft">
+            <div class="firstone"><a href=""><img src="assets/sa.png" alt=""></a></div>
+            <div class="slogan">Your One-Stop Destination for Quality Finds!</div>
+            <div class="information">
+                <div class="same"><a href=""><img src="assets/noun-call-4812562 3.svg" alt=""> <span class="gaping">
+                            9815603389, 9848629739</span></a></div>
+                <div class="same"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=customercare@sumit.hotmail.com"><img src="assets/noun-mail-4809293 3.svg" alt=""> <span class="gaping">
+                    customercare@sumit.hotmail.com</span></a></div>
+                <div class="same"><a href="https://maps.app.goo.gl/m2DzEMSAfL5MLVKk7"><img src="assets/noun-location-4811216 3.svg" alt=""> <span class="gaping">
+                            PatanDhoka Lalitpur</span></a></div>
+            </div>
+        </div>
+        <div class="lowright">
+            <div class="uplow">
+                <a href=""><img src="assets/whatsapp.svg" alt=""></a>
+                <a href=""><img src="assets/facebook.svg" alt=""></a>
+                <a href=""><img src="assets/insta.svg" alt=""></a>
+            </div>
+            <div class="downlow">
+                <div class="lowest">
+                    <div class="box box1">
+                        <h2 class="quickhead">Quicklinks</h2>
+                        <div><a class="quicklinks" href="index.html">Home</a></div>
+                        <div><a class="quicklinks" href="aboutus.html">About Us</a></div>
+                        <div><a class="quicklinks" href="ourservice.html">Our Products</a></div>
+                        <div><a class="quicklinks" href="contactus.html">Reach Us</a></div>
+                    </div>
+                    <div class="box box21">
+                        <h2 class="quickhead">Services</h2>
+                        <div><a class="quicklinks" href="#MEN">Men's Wares</a></div>
+                        <div><a class="quicklinks" href="#WOMEN">Women's Wares</a></div>
+                        <div><a class="quicklinks" href="#KID">Kid's Wares</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div>
+            &copy; Sumit Shopping 2024. All Rights are Reserved and Protected. Created by Newbiee Coder'ss&TRADE;
+        </div>
+    </footer>
+
+    <!-- /* Footer Code  Ends */ -->
+
+</body>
+
+</html>

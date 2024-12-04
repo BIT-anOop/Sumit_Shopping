@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas Organic T-Shirt</title>
+    <link rel="shortcut icon" href="assets/FavHome.png" type="image/x-png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cookie&family=Diphylleia&family=Inter&family=Kanit&family=Lemon&family=Poppins&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="product.css">
+    <style>
+        .card[for="c1"] {
+            background-image: url(assets/pictures/men5.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .card[for="c2"] {
+            background-image: url(assets/pictures/men5b.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .card[for="c3"] {
+            background-image: url(assets/pictures/men5c.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- /* Top Navbar Code Starts */ -->
+
+    <section class="navbar">
+        <div class="left">
+            <a href="index.html"><img src="assets/sa.png" alt=""></a>
+        </div>
+        <div class="right">
+            <nav>
+                <li><a onclick="index()" href="index.html">Home</a></li>
+                <li><a onclick="ourservice()" href="ourservice.html">Our Products</a></li>
+                <li><a onclick="aboutus()" href="aboutus.html">About Us</a></li>
+                <li><a onclick="contactus()" href="contactus.html">Contact Us</a></li>
+            </nav>
+        </div>
+        <div class="userlogin"><a class="user" onclick="login()" href="../login.html"><img src="assets/user.png" alt="">
+                &ThickSpace;
+                Login / Signup</a></div>
+    </section>
+
+    <!-- /* Top Navbar Code Ends */ -->
+
+    <section class="ordering">
+        <div class="wrapper">
+            <input type="radio" name="slide" id="c1">
+            <label for="c1" class="card">
+            </label>
+            <input type="radio" name="slide" id="c2" checked>
+            <label for="c2" class="card">
+            </label>
+            <input type="radio" name="slide" id="c3">
+            <label for="c3" class="card">
+            </label>
+        </div>
+        <div class="selectionarea">
+            <div class="productbuydetails">
+                <div class="productTitle">
+                    <div>Adidas Organic T-Shirt</div>
+                </div>
+                <hr>
+                <div class="ProductSize">
+                    <div class="selectsize">Select a size:</div>
+                    <div class="sizesweprovide">
+                        <input type="radio" id="s" name="size">
+                        <label for="s">S</label>
+
+                        <input type="radio" id="m" name="size">
+                        <label for="m">M</label>
+
+                        <input type="radio" id="l" name="size">
+                        <label for="l">L</label>
+
+                        <input type="radio" id="xl" name="size">
+                        <label for="xl">XL</label>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="ProductPrice">
+                    <span class="pprice">Price:</span>
+                    <div class="cost"> <strike>Rs.10,000</strike> &ThickSpace; &ThickSpace; <div class="mainprice">
+                            Rs.13,999</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="ORELSE">
+                    <button class="button add-to-cart">Add to Cart</button>
+                    <button class="button buy-now" onclick="buynow()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="youmayalsolike">
+        <center>
+            <h1>You May Also Like</h1>
+        </center>
+        <div class="youcontainer">
+            <div class="likeproduct">
+                <div class="ppicture">
+                    <img src="assets/pictures/men1.webp" alt="Shirt 1">
+                </div>
+                <a href="product9.html">
+                    <h2>Nike Dri-FIT Men's T-Shirt</h2>
+                </a>
+                <p>NRP.13999</p>
+            </div>
+            <div class="likeproduct">
+                <div class="ppicture">
+                    <img src="assets/pictures/men8.webp" alt="Shirt 1">
+                </div>
+                <a href="product16.html">
+                    <h2>Armour Men's Fleece Jogger</h2>
+                </a>
+                <p>NRP.13999</p>
+            </div>
+            <div class="likeproduct">
+                <div class="ppicture">
+                    <img src="assets/pictures/men4.webp" alt="Shirt 1">
+                </div>
+                <a href="product12.html">
+                    <h2>Men's Non-Iron Dress</h2>
+                </a>
+                <p>NRP.5999</p>
+            </div>
+            <div class="likeproduct">
+                <div class="ppicture">
+                    <img src="assets/pictures/men7.webp" alt="Shirt 1">
+                </div>
+                <a href="product15.html">
+                    <h2>Apparel Tri-Blend T-Shirt</h2>
+                </a>
+                <p>NRP.12999</p>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- /* Footer Code  Start */ -->
+    <section class="downnavbar">
+        <div class="lowleft">
+            <div class="firstone"><a href=""><img src="assets/sa.png" alt=""></a></div>
+            <div class="slogan">Your One-Stop Destination for Quality Finds!</div>
+            <div class="information">
+                <div class="same"><a href=""><img src="assets/noun-call-4812562 3.svg" alt=""> <span class="gaping">
+                            9815603389, 9848629739</span></a></div>
+                <div class="same"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=customercare@sumit.hotmail.com"><img src="assets/noun-mail-4809293 3.svg" alt=""> <span class="gaping">
+                    customercare@sumit.hotmail.com</span></a></div>
+                <div class="same"><a href="https://maps.app.goo.gl/m2DzEMSAfL5MLVKk7"><img src="assets/noun-location-4811216 3.svg" alt=""> <span class="gaping">
+                            PatanDhoka Lalitpur</span></a></div>
+            </div>
+        </div>
+        <div class="lowright">
+            <div class="uplow">
+                <a href=""><img src="assets/whatsapp.svg" alt=""></a>
+                <a href=""><img src="assets/facebook.svg" alt=""></a>
+                <a href=""><img src="assets/insta.svg" alt=""></a>
+            </div>
+            <div class="downlow">
+                <div class="lowest">
+                    <div class="lowest">
+                        <div class="box box1">
+                            <h2 class="quickhead">Quicklinks</h2>
+                            <div><a class="quicklinks" onclick="index()" href="index.html">Home</a></div>
+                            <div><a class="quicklinks" onclick="aboutus()" href="aboutus.html">About Us</a></div>
+                            <div><a class="quicklinks" onclick="ourservice()" href="ourservice.html">Our Products</a></div>
+                            <div><a class="quicklinks" onclick="contactus()" href="contactus.html">Reach Us</a></div>
+                        </div>
+                        <div class="box box21">
+
+                            <h2 class="quickhead">Services</h2>
+                            <div><a class="quicklinks" onclick="ourservice()" href="ourservice.html #MEN">Men's
+                                    Wares</a></div>
+                            <div><a class="quicklinks" onclick="ourservice()" href="ourservice.html #WOMEN">Women's
+                                    Wares</a></div>
+                            <div><a class="quicklinks" onclick="ourservice()" href="ourservice.html #KID">Kid's
+                                    Wares</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            &copy; Sumit Shopping 2024. All Rights are Reserved and Protected. Created by Newbiee Coder'ss&TRADE;
+        </div>
+    </footer>
+
+    <!-- /* Footer Code  Ends */ -->
+
+    <script>
+        function buynow() {
+            window.location.href = "buynow.html"
+        }
+        function index() {
+            window.location.href = "../index.html"
+        }
+        function ourservice() {
+            window.location.href = "../ourservice.html"
+        }
+        function aboutus() {
+            window.location.href = "../aboutus.html"
+        }
+        function contactus() {
+            window.location.href = "../contactus.html"
+        }
+        function login() {
+            window.location.href = "../login.html"
+        }
+    </script>
+</body>
+
+</html>
